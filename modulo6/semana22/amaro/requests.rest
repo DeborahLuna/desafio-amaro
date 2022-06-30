@@ -1,0 +1,36 @@
+POST http://localhost:3003/products/create
+Content-Type: application/json
+
+{
+    "id": 7,
+    "name": "Calça",
+    "tags": ["casual", "estampa", "fashion"]
+}
+
+###
+
+GET http://localhost:3003/product/5
+Content-Type: application/json
+
+###
+
+GET http://localhost:3003/product?name=vestido
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3003/product/get/social
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Teste",
+    "email": "teste@teste.com",
+    "password": "Teste@1234",
+    "role": "normal"
+}
