@@ -165,7 +165,7 @@ export default class ProductsBusiness {
         throw new CustomError(422, "Favor informar uma tag.")
       }
   
-      const productsIds = await this.productsDatabase.getProductsIdsByTag(tag)
+      const productsIds = await this.productsDatabase.getProductsByTag(tag)
 
       if(!productsIds){
         throw new CustomError(422, "Não foram encontrados produtos com essa tag.")
